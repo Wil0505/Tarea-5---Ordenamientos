@@ -8,6 +8,7 @@ void OrdMetBurbuja();
 void OrdShakerSort();
 void OrdPorSeleccion();
 void OrdPorInsercion();
+void BusqSecue();
 
 int main(){
 	int opc;
@@ -26,7 +27,7 @@ int main(){
 		cout<<"6. Ordenamiento Shaker Sort"<<endl;
 		cout<<"7. Ordenamiento Seleccion Directa"<<endl;
 		cout<<"8. Ordenamiento Insercion"<<endl;
-		cout<<"8. Busqueda Secuencial"<<endl;
+		cout<<"9. Busqueda Secuencial"<<endl;
 		cout<<"10. Busqueda Binaria"<<endl<<endl;
 		cout<<"Ingrese una opcion:  ";
 		cin>>opc;
@@ -73,7 +74,7 @@ int main(){
 			break;
 			
 			case 9:
-				OrdPorInsercion();
+				BusqSecue();
 			break;
 			
 			case 10:
@@ -259,4 +260,49 @@ void OrdPorInsercion(){
 		cout<<v[i]<<" ";
 	}
 	
+}
+
+void BusqSecue(){
+	system("cls");
+	int v[100], f, d, j=0;
+	char b= 'F';
+	
+	//Pedirle la longitud del arreglo al usuario
+	cout<<"Ingrese la longitud del arreglo: ";
+	cin>>f;
+	cout<<endl;
+	
+	//Pedirle al usuario que ingrese el entero que desee
+	for(int i=0;i<f;i++){
+		cout<<"Indique el numero entero: ";
+		cin>>v[i];
+	}
+	
+	cout<<endl;
+	
+	//Pedirle al usuario el entero que busca
+	cout<<"Ingrese el numero a buscar: ";
+	cin>>d;
+	cout<<endl;
+	
+	//Algoritmo del Busqueda Secuencial
+	while((b=='F') && (j<f)){
+		if(v[j]==d){
+			b='V';
+			}
+			j++;
+		}
+			
+	cout<<endl;
+	
+	//Imprimiendo si se encontro el numero y en que posicion
+	if(b=='F'){
+		cout<<"EL numero que busca no existe en el arreglo"<<endl;
+	}
+	
+	else if(b=='V'){
+		cout<<"El numero a sido encontrado en la posicion: "<<j;
+	}
+
+
 }
