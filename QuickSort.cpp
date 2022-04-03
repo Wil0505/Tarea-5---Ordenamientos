@@ -5,8 +5,9 @@ using namespace std;
 
 void Oquicksort(int[], int);
 void imprime(int[], int);
+void Quicksort(int [], int)
 
-int main()//Quicksort
+void Quicksort(int a[], int n)
 {
 	int n;
 	cin>>n;
