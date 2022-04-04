@@ -21,15 +21,11 @@ int main(){
 		cout<<endl;
 		cout<<"ORDENAMIENTO"<<endl<<endl;
 		cout<<" 1. Ordenamiento Burbuja "<<endl;
-		cout<<" 2. Ordenamiento Quicksort"<<endl;
-		cout<<" 3. Ordenamiento Shell Sort"<<endl;
-		cout<<" 4. Ordenamiento Heap Sort"<<endl;
-		cout<<" 5. Ordenamiento Merge Sort"<<endl;
-		cout<<" 6. Ordenamiento Shaker Sort"<<endl;
-		cout<<" 7. Ordenamiento Seleccion Directa"<<endl;
-		cout<<" 8. Ordenamiento Insercion"<<endl;
-		cout<<" 9. Busqueda Secuencial"<<endl;
-		cout<<"10. Busqueda Binaria"<<endl<<endl;
+		cout<<" 2. Ordenamiento Shaker Sort"<<endl;
+		cout<<" 3. Ordenamiento Seleccion Directa"<<endl;
+		cout<<" 4. Ordenamiento Insercion"<<endl;
+		cout<<" 5. Busqueda Secuencial"<<endl;
+		cout<<" 6. Busqueda Binaria"<<endl<<endl;
 		cout<<"Ingrese una opcion:  ";
 		cin>>opc;
 		
@@ -51,34 +47,18 @@ int main(){
 			break;
 			
 			case 3:
-				OrdShakerSort();
-			break;
-		
-			case 4:
-				OrdShakerSort();
-			break;
-			
-			case 5:
-				OrdShakerSort();
-			break;
-			
-			case 6:
-				OrdShakerSort();
-			break;
-			
-			case 7:
 				OrdPorSeleccion();
 			break;
 				
-			case 8:
+			case 4:
 				OrdPorInsercion();
 			break;
 			
-			case 9:
+			case 5:
 				BusqSecue();
 			break;
 			
-			case 10:
+			case 6:
 				BusqBinaria();
 			break;
 		}
